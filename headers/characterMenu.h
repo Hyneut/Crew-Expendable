@@ -11,6 +11,7 @@ bool next;
 string name;
 string choice;
 string chosenClass;
+bool inputClass;
 
 public:
 bool getNext();
@@ -21,6 +22,7 @@ void printClass();
 void correct();
 bool validClass();
 void setClass();
+void resetClass();
 
 //Made for testing as no Character class made
 

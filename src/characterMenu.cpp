@@ -36,6 +36,7 @@ void characterMenu::setNext() {
         next = true;
     }
     else if (userInput == 2) {
+        inputClass  = false;
         next = false;
     }
     else {
@@ -61,9 +62,14 @@ void characterMenu::setClass() {
 
 bool characterMenu::validClass() {
     if (userInput == 1 || userInput == 2 || userInput == 3) {
-        return true;
+        inputClass = true;
     }
     else {
-        return false;
+        inputClass = false;
     }
+    return inputClass;
+}
+
+void characterMenu::resetClass() {
+    inputClass = false;
 }

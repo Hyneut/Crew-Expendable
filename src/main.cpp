@@ -24,23 +24,24 @@ int main() {
     }
 
     while (!cMenu.getNext()) {
-    cMenu.print();
+        cMenu.print();
 
-    while (!cMenu.validClass()) {
-        cMenu.printClass();
-        cMenu.input(3);
-    }
+        while (!cMenu.validClass()) {
+            cMenu.printClass();
+            cMenu.input(3);
+            cout << "HERE";
+        }
 
     cMenu.setClass();
-    //end here
     cMenu.correct();
+    cMenu.resetClass();
     }
 
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
     Tree.currChoice(); // PROLOGUE 
-    wait();
     cout << "===================================" << endl;
+    wait();
 
 //while(1) only used for testing purposes
     while (1) {

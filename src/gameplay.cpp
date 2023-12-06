@@ -52,7 +52,7 @@ void gameMenu::stats() {
 void gameMenu::help() {
     cout <<  endl << "===================================" << endl;
     cout << "HELP" << endl;
-    cout << "*IMPLEMENT HELP SCREEN*" << endl;
+    cout << "Space Game is a simple space-themed RPG game in which you select what you want to do by inputting a number" << endl;
     cout << "===================================" << endl;
 }
 
